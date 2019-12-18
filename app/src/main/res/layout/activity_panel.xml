@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PanelActivity"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/supervisor_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Supervisor:"/>
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/ubic_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supervisor_edit"
+        android:hint="Ubicación"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_margin="5dp"/>
+
+
+    <EditText
+        android:id="@+id/ot_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supervisor_edit"
+        android:layout_alignLeft="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:hint="N° OT"/>
+
+    <EditText
+        android:id="@+id/tec1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ot_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Técnico 1:"/>
+
+    <EditText
+        android:id="@+id/dni1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ot_edit"
+        android:layout_alignLeft="@id/center_view"
+        android:layout_margin="5dp"
+        android:maxLength="8"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:hint="DNI:"/>
+
+    <EditText
+        android:id="@+id/tec2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni1_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Técnico 2:"/>
+
+    <EditText
+        android:id="@+id/dni2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni1_edit"
+        android:layout_alignLeft="@id/center_view"
+        android:layout_margin="5dp"
+        android:maxLength="8"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:hint="DNI:"/>
+
+    <EditText
+        android:id="@+id/fechinicio_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tec2_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="date"
+        android:hint="Fecha Inicio:"/>
+
+    <EditText
+        android:id="@+id/fechtermino_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tec2_edit"
+        android:layout_alignLeft="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="date"
+        android:hint="Fecha de Termino:"/>
+
+    <EditText
+        android:id="@+id/horainicio_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fechinicio_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="time"
+        android:hint="Hora de Inicio:"/>
+
+    <EditText
+        android:id="@+id/horatermino_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fechtermino_edit"
+        android:layout_alignLeft="@id/center_view"
+        android:layout_margin="5dp"
+        android:inputType="time"
+        android:textStyle="bold"
+        android:hint="Hora de Termino:"/>
+    <EditText
+        android:id="@+id/maquina_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horainicio_edit"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:hint="Máquina:"/>
+
+    <EditText
+        android:id="@+id/modelo_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maquina_edit"
+        android:layout_alignEnd="@id/center_view"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:hint="Modelo:"/>
+
+    <EditText
+            android:id="@+id/serie_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maquina_edit"
+            android:layout_alignLeft="@id/center_view"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:hint="Serie:" />
+
+    <Button
+        android:id="@+id/btn_pane_siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modelo_edit"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:text="Siquiente" />
+
+
+</RelativeLayout>
