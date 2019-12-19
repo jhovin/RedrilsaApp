@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Orden de Trabajo"
+            android:text="REGISTROS DE DATOS GENERALES"
             android:textStyle="bold"
             android:textSize="20sp">
         </TextView>
@@ -30,8 +30,9 @@
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/sv1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -214,7 +215,6 @@
                     android:hint="Hora de inicio"></EditText>
 
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputFechaFin"
                 android:id="@+id/inputHoraFin"
@@ -231,7 +231,6 @@
                     android:hint="Hora de fin"></EditText>
 
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputMaquina"
                 android:layout_width="match_parent"
@@ -248,7 +247,6 @@
 
                 </EditText>
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputMaquina"
                 android:id="@+id/inputModelo"
@@ -265,7 +263,6 @@
                     android:hint="Modelo"></EditText>
 
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputMaquina"
                 android:id="@+id/inputSerie"
@@ -280,14 +277,24 @@
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:hint="Serie"></EditText>
-
             </android.support.design.widget.TextInputLayout>
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_below="@id/inputModelo"
                 android:layout_height="20dp"></View>
         </RelativeLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Siguiente"
+            >
+        </Button>
+    </RelativeLayout>
 </LinearLayout>
