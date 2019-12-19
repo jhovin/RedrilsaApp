@@ -5,20 +5,37 @@
     android:layout_margin="20dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Orden de Trabajo"
-        android:textStyle="bold"
-        android:textSize="20sp">
-    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/remicsa">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Orden de Trabajo"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:background="@drawable/shape3"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputLayout
@@ -75,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:hint="N° OT"></EditText>
+                    android:hint="Código"></EditText>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -265,6 +282,12 @@
                     android:hint="Serie"></EditText>
 
             </android.support.design.widget.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/inputModelo"
+                android:layout_height="20dp"></View>
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>
