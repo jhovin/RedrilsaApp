@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_diamante"
+    android:alpha="0.99"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/idLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_redondo"
+        android:layout_marginTop="-150dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="-40dp">
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/remicsa" />
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_below="@+id/avatarImage"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/shape2"
+            android:alpha="0.8"
+            android:src="@drawable/lm75">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_below="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:alpha="0.8"
+            android:background="@drawable/oficina">
+        </ImageButton>
+    </LinearLayout>
+
+
+</RelativeLayout>
