@@ -44,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/center_view"
                 >
 
                 <EditText
@@ -53,6 +54,22 @@
                     android:inputType="text">
 
                 </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDNISupervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="DNI"></EditText>
+
             </android.support.design.widget.TextInputLayout>
 
 
